@@ -1,75 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
-h1 {
-  color: #369;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 250%;
-}
-
-h2, h3 {
-  color: #444;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
-}
-
-body {
-  margin: 2em;
-}
-
-body, input[text], button {
-  color: #333;
-  font-family: Cambria, Georgia;
-}
-
-a {
-  cursor: pointer;
-  cursor: hand;
-}
-
-button {
-  font-family: Arial;
-  background-color: #eee;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  cursor: hand;
-}
-
-button:hover {
-  background-color: #cfd8dc;
-}
-
-button:disabled {
-  background-color: #eee;
-  color: #aaa;
-  cursor: auto;
-}
-  
-/* Navigation link styles */
-nav a {
-  padding: 5px 10px;
-  text-decoration: none;
-  margin-right: 10px;
-  margin-top: 10px;
-  display: inline-block;
-  background-color: #eee;
-  border-radius: 4px;
-}
-
-nav a:visited, a:link {
-  color: #607d8b;
-}
-
-nav a:hover {
-  color: #039be5;
-  background-color: #cfd8dc;
-}
-
-nav a.active {
-  color: #039be5;
-}
-  
-/* everywhere else */
-* {
-  font-family: Arial, Helvetica, sans-serif;
-}
+@import './helpers';
+@import '~nvd3/build/nv.d3.css';
+@import '~material-design-lite/src/material-design-lite.scss';
+@import './scss/material-angular-select';
+@import './scss/layout';
+@import './scss/chip';
+@import './scss/badge';
+@import './scss/slider';
+@import './scss/menu';
+@import './scss/button';
+@import './scss/textfield';
+@import './scss/data-table';
+@import './scss/label';
+@import './scss/list';
+@import './scss/form';
+@import './scss/scroll';
+@import './scss/helper';
+@import './scss/table';
+@import './widgets/link';
+@import './widgets/chart-legend';
+@import './widgets/form';
+@import './widgets/input-group';

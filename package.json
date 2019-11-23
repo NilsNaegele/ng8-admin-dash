@@ -13,7 +13,7 @@
     "lint": "ng lint && stylelint --syntax scss ./**/*.scss",
     "e2e": "ng e2e"
   },
-  "pre-commit": "lint",
+  "pre-commit": "slint:fix",
   "private": true,
   "repository": {
     "type": "git",

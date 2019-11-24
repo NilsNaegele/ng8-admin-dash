@@ -13,7 +13,6 @@ import { FakeBackendInterceptor } from './services/auth/fakebackend.interceptor.
 @NgModule({
   declarations: [
     AppComponent,
-    // BlankLayoutCardComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,15 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
+import { BlankLayoutCardComponent } from './../../../components/blank-layout-card/blank-layout-card.component';
 
 @Component({
   selector: 'app-error',
   templateUrl: './error.component.html',
-  styleUrls: ['./error.component.scss'],
+  styleUrls: ['../../../components/blank-layout-card/blank-layout-card.component.scss'],
 })
-export class ErrorComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class ErrorComponent extends BlankLayoutCardComponent {
 }

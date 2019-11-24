@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class BlankLayoutComponent {
   @HostBinding('class.not-found') public get notFound() {
-    return this.router.url === '/pages/404';
+    return this.router.url === '/user/404';
   }
 
   constructor(private router: Router) { }

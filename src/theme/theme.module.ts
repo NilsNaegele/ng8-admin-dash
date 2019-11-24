@@ -4,10 +4,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { CheckboxComponent } from './components/checkbox/checkbox.component';
+import { PageTopComponent } from './components/page-top/page-top.component';
 
+import { CardModule } from './components/card/card.module';
 import { UpgradableComponent } from './components/upgradable/upgradable.component';
 
 const BASE_COMPONENTS = [
+  PageTopComponent,
   UpgradableComponent,
   CheckboxComponent,
 ];
@@ -26,12 +29,13 @@ const BASE_PIPES = [];
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    ReactiveFormsModule,
+    CardModule,
   ],
   exports: [
     ...BASE_COMPONENTS,
     ...BASE_DIRECTIVES,
     ...BASE_PIPES,
+    CardModule,
   ],
 })
 export class ThemeModule { }

@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { CommonLayoutComponent } from './layouts/common-layout/common-layout.component';
 import { LayoutsModule } from './layouts/layouts.module';
+
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 const routes: Routes = [];
 
@@ -11,7 +14,7 @@ const routes: Routes = [];
       [
         { path: '', redirectTo: 'user', pathMatch: 'full' },
         { path: 'app', component: CommonLayoutComponent, children: [
-          // { path: 'dashboard', component: DashboardComponent, pathMatch: 'full' },
+          { path: 'dashboard', component: DashboardComponent, pathMatch: 'full' },
           // { path: 'dashboard-custom', component: Dashboard2Component, pathMatch: 'full' },
           // { path: 'forms', component: FormsComponent, pathMatch: 'full' },
           // { path: 'charts', component: ChartsComponent, pathMatch: 'full' },

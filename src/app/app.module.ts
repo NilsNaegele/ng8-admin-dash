@@ -2,6 +2,7 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { DashboardModule } from './pages/dashboard/dashboard.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,7 @@ import { FakeBackendInterceptor } from './services/auth/fakebackend.interceptor.
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
+    DashboardModule,
   ],
   providers: [
     AuthenticationService,

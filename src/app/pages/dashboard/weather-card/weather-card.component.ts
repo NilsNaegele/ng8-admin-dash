@@ -14,11 +14,15 @@ export class WeatherCardComponent implements OnInit {
       temp: -1,
     },
     weather: [
-      { description: 'cloudy, blue sky' },
+      { description: 'Mist',
+        icon: '50d',
+      },
     ],
   };
+  weatherIcon;
 
-  constructor(private weatherSearchService: WeatherSearchService) {}
+  constructor(private weatherSearchService: WeatherSearchService) {
+  }
 
   ngOnInit() {
     this.weatherSearchService.searchEntries('Bremen').subscribe((response) => {

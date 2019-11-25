@@ -5,3 +5,11 @@
     display: flex !important;
   }
 }
+
+header:hover {
+  cursor: pointer;
+}
+
+header:focus {
+  outline: 0;
+}

@@ -1,0 +1,32 @@
+<app-base-card>
+    <app-base-card-title>
+      <h2 class="mdl-card__title-text">Jetzt</h2>
+      <div class="mdl-layout-spacer"></div>
+      <div class="mdl-card__subtitle-text">
+        <i class="material-icons">room</i>
+        Welt Wetter
+      </div>
+    </app-base-card-title>
+    <app-base-card-body expanded>
+      <!-- <p class="weather-temperature">6<sup>&deg;</sup></p>
+      <p class="weather-description">
+        Wolkig, blauer Himmel
+      </p> -->
+      <table id="citiesTable" class="table">
+        <thead>
+          <tr>
+            <th>Stadt</th>
+            <th>Temperatur (C)</th>
+            <th>Windstärke (m/s)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let city of data.list">
+            <td class="forecast-info-main"><img src="https://openweathermap.org/img/w/{{city.weather[0].icon}}.png" class="forecast-icon" alt="forecast">{{ city.name }}</td>
+            <td class="forecast-info">{{ city.main.temp.toFixed(0) }}</td>
+            <td class="forecast-info-sec">{{ city.wind.speed }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </app-base-card-body>
+  </app-base-card>

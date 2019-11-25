@@ -12,6 +12,7 @@ import { PieChartCardComponent } from './pie-chart-card/pie-chart-card.component
 import { ProjectsTableCardComponent } from './projects-table-card/projects-table-card.component';
 import { TodoListCardComponent } from './todo-list-card/todo-list-card.component';
 import { TrendingCardComponent } from './trending-card/trending-card.component';
+import { WeatherCardDynamicComponent } from './weather-card-dynamic/weather-card-dynamic.component';
 import { WeatherCardComponent } from './weather-card/weather-card.component';
 
 @NgModule({
@@ -25,6 +26,7 @@ import { WeatherCardComponent } from './weather-card/weather-card.component';
     TrendingCardComponent,
     WeatherCardComponent,
     DashboardComponent,
+    WeatherCardDynamicComponent,
   ],
   imports: [
     CommonModule,

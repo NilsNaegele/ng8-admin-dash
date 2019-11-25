@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./sidebar.component.scss'],
 })
 export class SidebarComponent {
-  title = 'ng8-admin-dash';
+  title = 'gblitz';
   @Input() public menu;
 
 }

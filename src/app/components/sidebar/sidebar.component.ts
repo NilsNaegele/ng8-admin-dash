@@ -8,7 +8,7 @@ import { SidebarComponent as BaseSidebarComponent } from '../../../theme/compone
   styleUrls: ['../../../theme/components/sidebar/sidebar.component.scss'],
 })
 export class SidebarComponent extends BaseSidebarComponent {
-  public title = 'ng8-admin-dash';
+  public title = 'gblitz';
   public menu = [
     { name: 'Klassischer Dashboard', link: '/app/dashboard', icon: 'dashboard' },
     { name: 'Massgeschneidert', link: '/app/dashboard-custom', icon: 'dashboard' },

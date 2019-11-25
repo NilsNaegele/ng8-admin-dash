@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostBinding, OnInit } from '@angular/core';
+import { WeatherSearchService } from './../weather-card-dynamic/weather-search.service';
 
 @Component({
   selector: 'app-weather-card',
@@ -6,10 +7,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./weather-card.component.scss'],
 })
 export class WeatherCardComponent implements OnInit {
+  @HostBinding('class.weather') public readonly weather = true;
 
-  constructor() { }
+  data: any = {
+    main: {
+      temp: -1,
+    },
+    weather: [
+      { description: 'cloudy, blue sky' },
+    ],
+  };
+
+  constructor(private weatherSearchService: WeatherSearchService) {}
 
   ngOnInit() {
+    this.weatherSearchService.searchEntries('Bremen').subscribe((response) => {
+      // tslint:disable-next-line: no-console
+      console.log(response);
+      if (response) {
+        this.data = response;
+      }
+    });
   }
 
 }

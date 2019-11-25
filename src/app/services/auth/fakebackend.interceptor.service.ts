@@ -12,8 +12,8 @@ import { delay, dematerialize, materialize, mergeMap } from 'rxjs/operators';
 @Injectable()
 export class FakeBackendInterceptor implements HttpInterceptor {
 
-  private username = 'Luke';
-  private email = 'Luke@skywalker.com';
+  private username = 'Nils';
+  private email = 'Nils@skywalker.com';
 
   constructor() { }
 

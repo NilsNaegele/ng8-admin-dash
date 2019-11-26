@@ -1,15 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-mounteverrest-card',
   templateUrl: './mounteverrest-card.component.html',
   styleUrls: ['./mounteverrest-card.component.scss'],
 })
-export class MounteverrestCardComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+export class MounteverrestCardComponent {
+  @HostBinding('class.mounteverest') public readonly cotoneaster = true;
 
 }

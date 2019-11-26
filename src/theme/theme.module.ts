@@ -7,6 +7,7 @@ import { CheckboxComponent } from './components/checkbox/checkbox.component';
 import { PageTopComponent } from './components/page-top/page-top.component';
 
 import { CardModule } from './components/card/card.module';
+import { LineChartComponent } from './components/line-chart/line-chart.component';
 import { PieChartComponent } from './components/pie-chart/pie-chart.component';
 import { SidebarModule } from './components/sidebar/sidebar.module';
 import { UpgradableComponent } from './components/upgradable/upgradable.component';
@@ -16,6 +17,7 @@ const BASE_COMPONENTS = [
   UpgradableComponent,
   CheckboxComponent,
   PieChartComponent,
+  LineChartComponent,
 ];
 
 const BASE_DIRECTIVES = [];

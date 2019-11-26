@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { ProgressComponent } from './components/progress/progress.component';
 
 import { CheckboxComponent } from './components/checkbox/checkbox.component';
 import { PageTopComponent } from './components/page-top/page-top.component';
@@ -18,6 +19,7 @@ const BASE_COMPONENTS = [
   CheckboxComponent,
   PieChartComponent,
   LineChartComponent,
+  ProgressComponent,
 ];
 
 const BASE_DIRECTIVES = [];

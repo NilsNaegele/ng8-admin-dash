@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BlankLayoutCardComponent } from './components/blank-layout-card/blank-layout-card.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { ComponentsModule } from './pages/components/components.module';
 import { AuthInterceptor } from './services/auth/auth.interceptor.service';
 import { AuthenticationService } from './services/auth/authentication.service';
 import { FakeBackendInterceptor } from './services/auth/fakebackend.interceptor.service';
@@ -21,6 +22,7 @@ import { FakeBackendInterceptor } from './services/auth/fakebackend.interceptor.
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
+    ComponentsModule,
     DashboardModule,
   ],
   providers: [

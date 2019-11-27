@@ -5,7 +5,7 @@ import { BlankLayoutCardComponent } from '../../../components/blank-layout-card/
 @Component({
   selector: 'app-forgot-password',
   templateUrl: './forgot-password.component.html',
-  styleUrls: ['../../../components/blank-layout-card/blank-layout-card.component.scss'],
+  styleUrls: ['./forgot-password.component.scss'],
 })
 export class ForgotPasswordComponent extends BlankLayoutCardComponent {
 }

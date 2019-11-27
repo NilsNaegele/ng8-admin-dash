@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./weather-card-dynamic.component.scss'],
 })
 export class WeatherCardDynamicComponent {
-  private apiUrl = 'https://api.openweathermap.org/data/2.5/group?id=2950159,3369157,2643743,6455259,2147714,1850147&units=metric&appid=110ff02ed24ccd819801248373c3b208';
+  private apiUrl = 'https://api.openweathermap.org/data/2.5/group?id=2950159,3369157,2643743,6455259,2147714,1850147&units=metric&appid=f63da89e53880dcbe0f0afb8d0f12ca0';
   data: any = {};
 
   constructor(private http: HttpClient) {

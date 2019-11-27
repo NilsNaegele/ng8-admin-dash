@@ -5,7 +5,7 @@ import { BlankLayoutCardComponent } from './../../../components/blank-layout-car
 @Component({
   selector: 'app-error',
   templateUrl: './error.component.html',
-  styleUrls: ['../../../components/blank-layout-card/blank-layout-card.component.scss'],
+  styleUrls: ['./error.component.scss'],
 })
 export class ErrorComponent extends BlankLayoutCardComponent {
 }

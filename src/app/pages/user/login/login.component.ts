@@ -9,7 +9,7 @@ import { BlankLayoutCardComponent } from '../../../components/blank-layout-card/
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['../../../components/blank-layout-card/blank-layout-card.component.scss'],
+  styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent extends BlankLayoutCardComponent implements OnInit  {
   loginForm: FormGroup;

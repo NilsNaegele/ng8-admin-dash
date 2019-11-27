@@ -10,7 +10,7 @@ import { debounceTime, distinctUntilChanged, switchMap } from 'rxjs/operators';
 export class WeatherSearchService {
   baseUrl = 'https://api.openweathermap.org/data/2.5/weather';
   queryUrl = '?q=';
-  endUrl = '&units=metric&appid=110ff02ed24ccd819801248373c3b208';
+  endUrl = '&units=metric&appid=f63da89e53880dcbe0f0afb8d0f12ca0';
 
   constructor(private http: HttpClient) {}
 

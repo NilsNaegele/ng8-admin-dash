@@ -11,7 +11,7 @@ import { AuthenticationService } from '../../../services/auth/authentication.ser
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.component.html',
-  styleUrls: ['../../../components/blank-layout-card/blank-layout-card.component.scss'],
+  styleUrls: ['./sign-up.component.scss'],
 })
 export class SignUpComponent extends BlankLayoutCardComponent implements OnInit {
 

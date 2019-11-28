@@ -10,18 +10,18 @@ import { SidebarComponent as BaseSidebarComponent } from '../../../theme/compone
 export class SidebarComponent extends BaseSidebarComponent {
   public title = 'gblitz';
   public menu = [
-    { name: 'Klassischer Dashboard', link: '/app/dashboard', icon: 'dashboard' },
+    { name: 'Mein Dashboard', link: '/app/dashboard', icon: 'dashboard' },
     {
       name: 'UI',
       children: [
         ...[
           'knoepfe',
-          'Karten',
-          'Farben',
-          'Formulare',
-          'Ikonen',
-          'Schriftzüge',
-          'Tabellen',
+          'karten',
+          'farben',
+          'formulare',
+          'ikonen',
+          'schriftzüge',
+          'tabellen',
         ].map(ui => ({
           name: ui[0].toUpperCase() + ui.slice(1),
           link: `/user-interface/${ui}`,

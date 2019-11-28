@@ -28,12 +28,12 @@ export class ButtonsComponent extends UpgradableComponent {
     'white',
   ];
   actions = [
-    'archivier',
-    'erstellen',
-    'entwürfe',
-    'weiterleit',
-    'anfügen',
-    'antwort',
+    'archiv',
+    'erstel',
+    'entwur',
+    'weiter',
+    'anfüge',
+    'antwor',
   ];
   icons1 = [
     'assignment_returned',

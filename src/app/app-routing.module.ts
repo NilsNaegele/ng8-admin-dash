@@ -21,8 +21,9 @@ const routes: Routes = [];
           // { path: 'components', component: ComponentsComponent, pathMatch: 'full' },
           { path: '**', redirectTo: '/user/404' },
         ] }, // add 'canActivate: AuthGuard' for catching unauth users
-        // { path: 'ui', loadChildren: './pages/ui/ui.module#UIModule' },
+        { path: 'user-interface', loadChildren: './pages/user-interface/user-interface.module#UserInterfaceModule' },
         // { path: 'maps', loadChildren: './pages/maps/maps.module#MapsModule' },
+       // { path: 'user', loadChildren: './pages/user/user.module#UserModule' },
         { path: 'user', loadChildren: './pages/user/user.module#UserModule' },
         { path: '**', redirectTo: '/user/404' },
       ],

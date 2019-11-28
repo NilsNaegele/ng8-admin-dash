@@ -1,0 +1,308 @@
+<div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone buttons-basic">
+        <app-base-card>
+          <app-base-card-title>
+            <h2 class="mdl-card__title-text">Normale Knöpfe</h2>
+          </app-base-card-title>
+          <app-base-card-body>
+            <ul class="mdl-list pull-left">
+              <li class="mdl-list__item">
+                <span class="text-color--gray">Normal</span>
+              </li>
+              <li *ngFor="let color of colors1" class="mdl-list__item">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button--colored-{{ color }}">
+                  Knopf
+                </button>
+              </li>
+            </ul>
+            <ul class="mdl-list pull-left">
+              <li class="mdl-list__item">
+                <span class="text-color--gray">Deaktiviert</span>
+              </li>
+              <li *ngFor="let color of colors1" class="mdl-list__item">
+                <button class="mdl-button mdl-js-button mdl-button--raised button--colored-{{ color }}" disabled>
+                  Knopf
+                </button>
+              </li>
+            </ul>
+          </app-base-card-body>
+        </app-base-card>
+      </div>
+      
+      <div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone buttons-with-icons">
+        <app-base-card>
+          <app-base-card-title>
+            <h2 class="mdl-card__title-text">Knöpfe mit Ikonen</h2>
+          </app-base-card-title>
+          <app-base-card-body>
+            <ul class="mdl-list pull-left">
+              <li class="mdl-list__item">
+                <span class="text-color--gray">Normal</span>
+              </li>
+              <li *ngFor="let item of buttonsWithIcons" class="mdl-list__item">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button--colored-{{ item.color }}">
+                  <i class="material-icons">{{ item.icon }}</i>
+                  {{ item.action | titlecase }}
+                </button>
+              </li>
+            </ul>
+            <ul class="mdl-list pull-left">
+              <li class="mdl-list__item">
+                <span class="text-color--gray">Deaktiviert</span>
+              </li>
+              <li *ngFor="let item of buttonsWithIcons" class="mdl-list__item">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button--colored-{{ item.color }}" disabled>
+                  <i class="material-icons">{{ item.icon }}</i>
+                  {{ item.action | titlecase }}
+                </button>
+              </li>
+            </ul>
+          </app-base-card-body>
+        </app-base-card>
+      </div>
+      
+      <div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--4-col-tablet mdl-cell--2-col-phone buttons-social">
+        <app-base-card>
+          <app-base-card-title>
+            <h2 class="mdl-card__title-text">Soziale Knöpfe</h2>
+          </app-base-card-title>
+          <app-base-card-body>
+            <ul class="mdl-list pull-left">
+              <li class="mdl-list__item">
+                <span class="text-color--gray">Normal</span>
+              </li>
+              <li *ngFor="let name of socials" class="mdl-list__item">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button--{{ name }}">
+                  <i class="material-icons"></i>
+                  {{ name | titlecase }}
+                </button>
+              </li>
+            </ul>
+            <ul class="mdl-list pull-left">
+              <li class="mdl-list__item">
+                <span class="text-color--gray">Deaktiviert</span>
+              </li>
+              <li *ngFor="let name of socials" class="mdl-list__item">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button--{{ name }}" disabled>
+                  <i class="material-icons"></i>
+                  {{ name | titlecase }}
+                </button>
+              </li>
+            </ul>
+          </app-base-card-body>
+        </app-base-card>
+      </div>
+      
+      <div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone buttons-icons">
+        <app-base-card>
+          <app-base-card-title>
+            <h2 class="mdl-card__title-text">Ikonen Knöpfe</h2>
+          </app-base-card-title>
+          <app-base-card-body>
+            <ul class="mdl-list pull-left">
+              <li class="mdl-list__item">
+                <span class="text-color--gray">Normal</span>
+              </li>
+              <li *ngFor="let item of iconButtons" class="mdl-list__item">
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect button--colored-{{ item.color }}">
+                  <i class="material-icons">{{ item.icon }}</i>
+                </button>
+              </li>
+            </ul>
+            <ul class="mdl-list pull-left">
+              <li class="mdl-list__item">
+                <span class="text-color--gray">Soziale</span>
+              </li>
+              <li *ngFor="let name of socials" class="mdl-list__item">
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect button--{{ name }}">
+                  <i class="material-icons"></i>
+                </button>
+              </li>
+            </ul>
+            <ul class="mdl-list pull-left">
+              <li class="mdl-list__item">
+                <span class="text-color--gray">Deaktiviert</span>
+              </li>
+              <li *ngFor="let item of iconButtons" class="mdl-list__item">
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect button--colored-{{ item.color }}" disabled>
+                  <i class="material-icons">{{ item.icon }}</i>
+                </button>
+              </li>
+            </ul>
+            <ul class="mdl-list pull-left">
+              <li class="mdl-list__item">
+                <span class="text-color--gray"></span>
+              </li>
+              <li *ngFor="let name of socials" class="mdl-list__item">
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect button--{{ name }}" disabled>
+                  <i class="material-icons"></i>
+                </button>
+              </li>
+            </ul>
+          </app-base-card-body>
+        </app-base-card>
+      </div>
+      
+      <div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone buttons-icons">
+        <app-base-card>
+          <app-base-card-title>
+            <h2 class="mdl-card__title-text">Erhobene ikonen Knöpfe</h2>
+          </app-base-card-title>
+          <app-base-card-body>
+            <ul class="mdl-list pull-left">
+              <li class="mdl-list__item">
+                <span class="text-color--gray">Normal</span>
+              </li>
+              <li *ngFor="let item of iconButtons" class="mdl-list__item">
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--raised mdl-js-ripple-effect button--colored-{{ item.color }}">
+                  <i class="material-icons">{{ item.icon }}</i>
+                </button>
+              </li>
+            </ul>
+            <ul class="mdl-list pull-left">
+              <li class="mdl-list__item">
+                <span class="text-color--gray">Sozial</span>
+              </li>
+              <li *ngFor="let name of socials" class="mdl-list__item">
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--raised mdl-js-ripple-effect button--{{ name }}">
+                  <i class="material-icons"></i>
+                </button>
+              </li>
+            </ul>
+            <ul class="mdl-list pull-left">
+              <li class="mdl-list__item">
+                <span class="text-color--gray">Deaktiviert</span>
+              </li>
+              <li *ngFor="let item of iconButtons" class="mdl-list__item">
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--raised mdl-js-ripple-effect button--colored-{{ item.color }}" disabled>
+                  <i class="material-icons">{{ item.icon }}</i>
+                </button>
+              </li>
+            </ul>
+            <ul class="mdl-list pull-left">
+              <li class="mdl-list__item">
+                <span class="text-color--gray"></span>
+              </li>
+              <li *ngFor="let name of socials" class="mdl-list__item">
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--raised mdl-js-ripple-effect button--{{ name }}" disabled>
+                  <i class="material-icons"></i>
+                </button>
+              </li>
+            </ul>
+          </app-base-card-body>
+        </app-base-card>
+      </div>
+      
+      <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--7-col-tablet mdl-cell--4-col-phone">
+        <app-base-card>
+          <app-base-card-title>
+            <h2 class="mdl-card__title-text">Knöpfe ohne Hintergrund</h2>
+          </app-base-card-title>
+          <app-base-card-body>
+            <ul class="mdl-list pull-left">
+              <li class="mdl-list__item">
+                <span class="text-color--gray">Einfache Knöpfe</span>
+              </li>
+              <li *ngFor="let color of colors1" class="mdl-list__item">
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect color-text--{{ color }}">
+                  Knopf
+                </button>
+              </li>
+            </ul>
+            <ul class="mdl-list pull-left">
+              <li class="mdl-list__item">
+                <span class="text-color--gray">Deaktiviert</span>
+              </li>
+              <li *ngFor="let color of colors1" class="mdl-list__item">
+                <button class="mdl-button mdl-js-button button--colored-{{ color }}" disabled>
+                  Knopf
+                </button>
+              </li>
+            </ul>
+            <ul class="mdl-list pull-left">
+              <li class="mdl-list__item">
+                <span class="text-color--gray">Knopf mit Ikone</span>
+              </li>
+              <li *ngFor="let item of buttonsWithIcons" class="mdl-list__item">
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect button--colored-{{ item.color }}">
+                  <i class="material-icons">{{ item.icon }}</i>
+                  {{ item.action | titlecase }}
+                </button>
+              </li>
+            </ul>
+            <ul class="mdl-list pull-left">
+              <li class="mdl-list__item">
+                <span class="text-color--gray">Sozial</span>
+              </li>
+              <li *ngFor="let name of socials" class="mdl-list__item">
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect button--{{ name }}">
+                  <i class="material-icons"></i>
+                  {{ name | titlecase }}
+                </button>
+              </li>
+            </ul>
+          </app-base-card-body>
+        </app-base-card>
+      </div>
+      
+      <div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--5-col-tablet mdl-cell--4-col-phone buttons-fab">
+        <app-base-card>
+          <app-base-card-title>
+            <h2 class="mdl-card__title-text">Fab Knöpfe</h2>
+          </app-base-card-title>
+          <app-base-card-body>
+            <ul class="mdl-list pull-left">
+              <li class="mdl-list__item">
+                <span class="text-color--gray">Farbiger FAB</span>
+              </li>
+              <li class="mdl-list__item">
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+                  <i class="material-icons">add</i>
+                </button>
+              </li>
+            </ul>
+            <ul class="mdl-list pull-left">
+              <li class="mdl-list__item">
+                <span class="text-color--gray">Mit Welligkeit</span>
+              </li>
+              <li class="mdl-list__item">
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                  <i class="material-icons">add</i>
+                </button>
+              </li>
+            </ul>
+            <ul class="mdl-list pull-left">
+              <li class="mdl-list__item">
+                <span class="text-color--gray">Deaktiviert</span>
+              </li>
+              <li class="mdl-list__item">
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored" disabled>
+                  <i class="material-icons">add</i>
+                </button>
+              </li>
+            </ul>
+          </app-base-card-body>
+        </app-base-card>
+      </div>
+      
+      <div class="mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone">
+        <app-base-card>
+          <app-base-card-title>
+            <h2 class="mdl-card__title-text">Wie nutzen</h2>
+          </app-base-card-title>
+          <app-base-card-body>
+            <p>
+              Um einen Knopf mit farbigen Hintergrund zu verwenden, nutze den CSS Klassen Namen
+              mit der korrespondierenden Farbe, kleingeschrieben mit dem Präfix <code><b>button--colored-</b></code>.<br>
+              Wenn der Farb Name aus mehreren Wörtern besteht, sind die Worte mit einem minus "-" getrennt.<br>
+              Hier kannst Du die Farbauswahl einsehen  <a href="ui-colors.html">here</a>.
+              <br><br>
+              <i class="color-text--red">Beispiel: Du möchtest den farbigen Knopf mit dem Farbnamen "Rot" nutzen. CSS Klasse für diesen Fall ist <code><b>.button--colored-red</b></code></i>
+              <br><br><br>
+              Um die sozialen Knöpfe zu nutzen, benutze die CSS Klasse
+              zum korrespondierenden Sozialen Netzwerk kleingeschrieben mit dem Präfix <code><b>button--</b></code>.
+              <br><br>
+              <i class="color-text--green">Beispiel: Du möchtest den Facebook Knopf nutzen. CSS Klasse für diesen Fall ist <code><b>.button--facebook</b></code></i>
+            </p>
+          </app-base-card-body>
+        </app-base-card>
+      </div>

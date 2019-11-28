@@ -3,10 +3,12 @@
 .weather {
   .mdl-card__supporting-text {
     color: $card-text-color;
-    background: url('#{$image-path}/misty_weather.jpg') center center no-repeat;
+    background: url('#{$image-path}/weather_bck.jpg') center center no-repeat;
     background-size: cover;
     text-align: right;
     padding-top: 38px;
+    min-height: 234px;
+    min-width: 355px;
     text-shadow: $weather-shadow-4px;
 
     .weather-temperature {

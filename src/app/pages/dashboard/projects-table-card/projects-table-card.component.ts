@@ -9,11 +9,11 @@ export class ProjectsTableCardComponent {
   @HostBinding('class.projects-table') public readonly projectsTable = true;
 
   tableHeader: string[] = [
-    'Project',
-    'Responsible',
-    'Client contact',
-    'Deadline',
-    'Progress',
+    'Projekt',
+    'Chef',
+    'Kunden Kontakt',
+    'Terminierung',
+    'Fortschritt',
   ];
   data: object[] = [
     {

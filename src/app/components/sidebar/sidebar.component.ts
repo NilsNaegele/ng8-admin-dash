@@ -11,12 +11,11 @@ export class SidebarComponent extends BaseSidebarComponent {
   public title = 'gblitz';
   public menu = [
     { name: 'Klassischer Dashboard', link: '/app/dashboard', icon: 'dashboard' },
-    { name: 'Massgeschneidert', link: '/app/dashboard-custom', icon: 'dashboard' },
     {
       name: 'UI',
       children: [
         ...[
-          'Knöpfe',
+          'knoepfe',
           'Karten',
           'Farben',
           'Formulare',
@@ -25,7 +24,7 @@ export class SidebarComponent extends BaseSidebarComponent {
           'Tabellen',
         ].map(ui => ({
           name: ui[0].toUpperCase() + ui.slice(1),
-          link: `/ui/${ui}`,
+          link: `/user-interface/${ui}`,
         })),
       ],
       icon: 'view_comfy',

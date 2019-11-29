@@ -6,6 +6,7 @@ import { LayoutsModule } from '../../layouts/layouts.module';
 
 import { ButtonsComponent } from './buttons/buttons.component';
 import { CardsComponent } from './cards/cards.component';
+import { ColorsComponent } from './colors/colors.component';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { CardsComponent } from './cards/cards.component';
         children: [
           { path: 'knoepfe', component: ButtonsComponent, pathMatch: 'full' },
           { path: 'karten', component: CardsComponent, pathMatch: 'full' },
+          { path: 'farben', component: ColorsComponent, pathMatch: 'full' },
         ],
       },
     ]),

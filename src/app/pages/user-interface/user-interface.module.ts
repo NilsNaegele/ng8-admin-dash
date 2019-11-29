@@ -6,9 +6,10 @@ import { UserInterfaceRoutingModule } from './user-interface-routing.module';
 
 import { ButtonsComponent } from './buttons/buttons.component';
 import { CardsComponent } from './cards/cards.component';
+import { ColorsComponent } from './colors/colors.component';
 
 @NgModule({
-  declarations: [ButtonsComponent, CardsComponent],
+  declarations: [ButtonsComponent, CardsComponent, ColorsComponent],
   imports: [
     CommonModule,
     UserInterfaceRoutingModule,

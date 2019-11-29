@@ -10,6 +10,7 @@ import { ButtonsComponent } from './buttons/buttons.component';
 import { CardsComponent } from './cards/cards.component';
 import { ColorsComponent } from './colors/colors.component';
 import { FormsComponent } from './forms/forms.component';
+import { IconsComponent } from './icons/icons.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { FormsComponent } from './forms/forms.component';
     CardsComponent,
     ColorsComponent,
     FormsComponent,
+    IconsComponent,
   ],
   imports: [
     CommonModule,

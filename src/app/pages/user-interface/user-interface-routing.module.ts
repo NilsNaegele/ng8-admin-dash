@@ -9,6 +9,7 @@ import { CardsComponent } from './cards/cards.component';
 import { ColorsComponent } from './colors/colors.component';
 import { FormsComponent } from './forms/forms.component';
 import { IconsComponent } from './icons/icons.component';
+import { TypographyComponent } from './typography/typography.component';
 
 @NgModule({
   imports: [
@@ -22,6 +23,7 @@ import { IconsComponent } from './icons/icons.component';
           { path: 'farben', component: ColorsComponent, pathMatch: 'full' },
           { path: 'formulare', component: FormsComponent, pathMatch: 'full' },
           { path: 'ikonen', component: IconsComponent, pathMatch: 'full' },
+          { path: 'schriftzuege', component: TypographyComponent, pathMatch: 'full' },
         ],
       },
     ]),

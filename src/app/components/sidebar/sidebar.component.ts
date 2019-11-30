@@ -20,7 +20,7 @@ export class SidebarComponent extends BaseSidebarComponent {
           'farben',
           'formulare',
           'ikonen',
-          'schriftzüge',
+          'schriftzuege',
           'tabellen',
         ].map(ui => ({
           name: ui[0].toUpperCase() + ui.slice(1),

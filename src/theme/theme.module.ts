@@ -9,6 +9,7 @@ import { PageTopComponent } from './components/page-top/page-top.component';
 
 import { CardModule } from './components/card/card.module';
 import { LineChartComponent } from './components/line-chart/line-chart.component';
+import { PaginationComponent } from './components/pagination/pagination.component';
 import { PieChartComponent } from './components/pie-chart/pie-chart.component';
 import { SidebarModule } from './components/sidebar/sidebar.module';
 import { UpgradableComponent } from './components/upgradable/upgradable.component';
@@ -20,6 +21,7 @@ const BASE_COMPONENTS = [
   PieChartComponent,
   LineChartComponent,
   ProgressComponent,
+  PaginationComponent,
 ];
 
 const BASE_DIRECTIVES = [];

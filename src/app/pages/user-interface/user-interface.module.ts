@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { MaterialAngularSelectModule } from 'material-angular-select';
 
 import { ThemeModule } from '../../../theme/theme.module';
+import { ComponentsModule } from './../components/components.module';
 import { UserInterfaceRoutingModule } from './user-interface-routing.module';
 
 import { ButtonsComponent } from './buttons/buttons.component';
@@ -29,6 +30,7 @@ import { TypographyComponent } from './typography/typography.component';
     UserInterfaceRoutingModule,
     ThemeModule,
     MaterialAngularSelectModule,
+    ComponentsModule,
   ],
 })
 export class UserInterfaceModule { }

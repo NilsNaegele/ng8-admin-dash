@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { CommonLayoutComponent } from '../../layouts/common-layout/common-layout.component';
 import { LayoutsModule } from '../../layouts/layouts.module';
 
+import { ComponentsComponent } from './../components/components.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { CardsComponent } from './cards/cards.component';
 import { ColorsComponent } from './colors/colors.component';
@@ -26,6 +27,7 @@ import { TypographyComponent } from './typography/typography.component';
           { path: 'ikonen', component: IconsComponent, pathMatch: 'full' },
           { path: 'schriftzuege', component: TypographyComponent, pathMatch: 'full' },
           { path: 'tabellen', component: TablesComponent, pathMatch: 'full' },
+          { path: 'komponente', component: ComponentsComponent, pathMatch: 'full' },
         ],
       },
     ]),

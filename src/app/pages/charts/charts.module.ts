@@ -6,9 +6,14 @@ import { ThemeModule } from './../../../theme/theme.module';
 
 import { BrowserStatisticsComponent } from './browser-statistics/browser-statistics.component';
 import { ChartsComponent } from './charts.component';
+import { CountryStatisticsComponent } from './country-statistics/country-statistics.component';
 
 @NgModule({
-  declarations: [ChartsComponent, BrowserStatisticsComponent],
+  declarations: [
+    ChartsComponent,
+    BrowserStatisticsComponent,
+    CountryStatisticsComponent,
+  ],
   imports: [
     CommonModule,
     FormsModule,

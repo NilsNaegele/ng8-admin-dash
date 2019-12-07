@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TooltipModule } from './../../../theme/directives/tooltip.module';
 
 import { ThemeModule } from '../../../theme/theme.module';
 
@@ -24,6 +25,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     FormsModule,
     ReactiveFormsModule,
     UserRoutingModule,
+    TooltipModule,
   ],
 })
 export class UserModule { }

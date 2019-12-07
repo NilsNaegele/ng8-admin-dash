@@ -8,13 +8,16 @@ import { CheckboxComponent } from './components/checkbox/checkbox.component';
 import { PageTopComponent } from './components/page-top/page-top.component';
 
 import { CardModule } from './components/card/card.module';
+import { IconToggleComponent } from './components/icon-toggle/icon-toggle.component';
 import { LineChartComponent } from './components/line-chart/line-chart.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { PieChartComponent } from './components/pie-chart/pie-chart.component';
 import { RadioButtonComponent } from './components/radio-button/radio-button.component';
 import { SidebarModule } from './components/sidebar/sidebar.module';
 import { SwitchComponent } from './components/switch/switch.component';
+import { ToggleComponent } from './components/toggle/toggle.component';
 import { UpgradableComponent } from './components/upgradable/upgradable.component';
+import { TooltipModule } from './directives/tooltip.module';
 
 const BASE_COMPONENTS = [
   PageTopComponent,
@@ -24,7 +27,9 @@ const BASE_COMPONENTS = [
   CheckboxComponent,
   PieChartComponent,
   LineChartComponent,
+  ToggleComponent,
   ProgressComponent,
+  IconToggleComponent,
   PaginationComponent,
 ];
 
@@ -51,6 +56,7 @@ const BASE_PIPES = [];
     ...BASE_PIPES,
     SidebarModule,
     CardModule,
+    TooltipModule,
   ],
 })
 export class ThemeModule { }

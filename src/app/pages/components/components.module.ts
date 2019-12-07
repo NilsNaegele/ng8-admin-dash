@@ -10,6 +10,7 @@ import { ComponentsComponent } from './components.component';
 import { ProgressBarsComponent } from './progress-bars/progress-bars.component';
 import { SlidersComponent } from './sliders/sliders.component';
 import { TogglesComponent } from './toggles/toggles.component';
+import { TooltipsComponent } from './tooltips/tooltips.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { TogglesComponent } from './toggles/toggles.component';
     ChipsComponent,
     SlidersComponent,
     TogglesComponent,
+    TooltipsComponent,
   ],
   imports: [
     CommonModule,

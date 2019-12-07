@@ -98,4 +98,28 @@
                   </app-base-card-body>
                 </app-base-card>
               </div>
+
+              <div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone mdl-cell--top">
+                  <app-base-card>
+                    <app-base-card-title>
+                      <h1 class="mdl-card__title-text">Zwei Zeilige Listen</h1>
+                    </app-base-card-title>
+                    <app-base-card-body>
+                      <ul class="mdl-list">
+                        <li *ngFor="let item of data; let i = index" class="mdl-list__item mdl-list__item--two-line">
+                          <span class="mdl-list__item-primary-content">
+                            <div class="mdl-list__item-avatar">
+                              <img width="100%" src="assets/images/{{ item.image }}">
+                            </div>
+                            <span>{{ item.name }}</span>
+                            <span class="mdl-list__item-sub-title">{{ item.description }}</span>
+                          </span>
+                          <span class="mdl-list__item-secondary-content">
+                            <span *ngIf="i === 0" class="mdl-list__item-secondary-info">Stern</span>
+                            <a class="mdl-list__item-secondary-action"><i class="material-icons">star</i></a>
+                          </span>
+                        </li>
+                      </ul>
+                    </app-base-card-body>
+                  </app-base-card>
 </div>

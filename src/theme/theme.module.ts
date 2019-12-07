@@ -11,12 +11,16 @@ import { CardModule } from './components/card/card.module';
 import { LineChartComponent } from './components/line-chart/line-chart.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { PieChartComponent } from './components/pie-chart/pie-chart.component';
+import { RadioButtonComponent } from './components/radio-button/radio-button.component';
 import { SidebarModule } from './components/sidebar/sidebar.module';
+import { SwitchComponent } from './components/switch/switch.component';
 import { UpgradableComponent } from './components/upgradable/upgradable.component';
 
 const BASE_COMPONENTS = [
   PageTopComponent,
   UpgradableComponent,
+  RadioButtonComponent,
+  SwitchComponent,
   CheckboxComponent,
   PieChartComponent,
   LineChartComponent,

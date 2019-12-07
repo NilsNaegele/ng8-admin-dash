@@ -9,6 +9,7 @@ import { ChipsComponent } from './chips/chips.component';
 import { ComponentsComponent } from './components.component';
 import { ProgressBarsComponent } from './progress-bars/progress-bars.component';
 import { SlidersComponent } from './sliders/sliders.component';
+import { TogglesComponent } from './toggles/toggles.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { SlidersComponent } from './sliders/sliders.component';
     BadgesComponent,
     ChipsComponent,
     SlidersComponent,
+    TogglesComponent,
   ],
   imports: [
     CommonModule,

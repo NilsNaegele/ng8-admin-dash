@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CommonLayoutComponent } from './layouts/common-layout/common-layout.component';
 import { LayoutsModule } from './layouts/layouts.module';
 
+import { ChartsComponent } from './pages/charts/charts.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 const routes: Routes = [];
@@ -17,7 +18,7 @@ const routes: Routes = [];
           { path: 'dashboard', component: DashboardComponent, pathMatch: 'full' },
           // { path: 'dashboard-custom', component: Dashboard2Component, pathMatch: 'full' },
           // { path: 'forms', component: FormsComponent, pathMatch: 'full' },
-          // { path: 'charts', component: ChartsComponent, pathMatch: 'full' },
+          { path: 'charts', component: ChartsComponent, pathMatch: 'full' },
           // { path: 'components', component: ComponentsComponent, pathMatch: 'full' },
           { path: '**', redirectTo: '/user/404' },
         ] }, // add 'canActivate: AuthGuard' for catching unauth users

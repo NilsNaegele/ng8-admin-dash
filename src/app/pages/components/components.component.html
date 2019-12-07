@@ -63,5 +63,39 @@
                 </app-base-card-body>
               </app-base-card>
             </div>
-
+          
+            <div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone mdl-cell--top">
+                <app-base-card>
+                  <app-base-card-title>
+                    <h1 class="mdl-card__title-text">Avatare und Kontroll Listen</h1>
+                  </app-base-card-title>
+                  <app-base-card-body>
+                    <ul class="mdl-list">
+                      <li *ngFor="let item of data; let i = index" [ngSwitch]="i" class="mdl-list__item">
+                        <span class="mdl-list__item-primary-content">
+                          <div class="mdl-list__item-avatar">
+                            <img width="100%" src="assets/images/{{ item.image }}">
+                          </div>
+                          <span>{{ item.name }}</span>
+                        </span>
+                        <span *ngSwitchCase="0" class="mdl-list__item-secondary-action">
+                          <label class="mdl-checkbox checkbox--colored-red mdl-js-checkbox mdl-js-ripple-effect" for="list-checkbox-1">
+                            <input type="checkbox" id="list-checkbox-1" class="mdl-checkbox__input" checked/>
+                          </label>
+                        </span>
+                        <span *ngSwitchCase="1" class="mdl-list__item-secondary-action">
+                          <label class="mdl-radio radio--colored-red mdl-js-radio mdl-js-ripple-effect" for="list-option-1">
+                            <input type="radio" id="list-option-1" class="mdl-radio__button" name="options" value="1"/>
+                          </label>
+                        </span>
+                        <span *ngSwitchCase="2" class="mdl-list__item-secondary-action">
+                          <label class="mdl-switch switch--colored-red mdl-js-switch mdl-js-ripple-effect" for="list-switch-1">
+                            <input type="checkbox" id="list-switch-1" class="mdl-switch__input" checked/>
+                          </label>
+                        </span>
+                      </li>
+                    </ul>
+                  </app-base-card-body>
+                </app-base-card>
+              </div>
 </div>

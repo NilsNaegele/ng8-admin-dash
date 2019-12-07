@@ -10,21 +10,21 @@ export class ComponentsComponent extends UpgradableComponent {
   @HostBinding('class.mdl-grid') public readonly mdlGrid = true;
   @HostBinding('class.ui-components') public readonly uiComponents = true;
 
-  private data = [
+  data = [
     {
-      name: 'Nathan Fillion',
-      description: 'Malcolm “Mal” Reynolds',
-      image: 'nathan-fillion.png',
+      name: 'Markus Phillip',
+      description: 'Ein hervorragender Einzelkämpfer',
+      image: 'markus-phillip.png',
     },
     {
-      name: 'Gina Torres',
-      description: 'Zoe Alleyne Washburne',
-      image: 'gina-torres.png',
+      name: 'Maria Zeld',
+      description: 'Eine super Schwimmerin',
+      image: 'maria-zeld.png',
     },
     {
-      name: 'Alan Tudyk',
-      description: 'Hoban “Wash” Washburne',
-      image: 'tudyk.png',
+      name: 'Andreas Tollsig',
+      description: 'Ein elite Ingenieur',
+      image: 'tollsig.png',
     },
   ];
 

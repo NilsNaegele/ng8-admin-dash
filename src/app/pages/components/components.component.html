@@ -23,6 +23,26 @@
         <app-badges></app-badges>
       </div>
 
+      <div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone mdl-cell--top">
+            <app-base-card>
+              <app-base-card-title>
+                <h1 class="mdl-card__title-text">Einfache Avatar Liste</h1>
+              </app-base-card-title>
+              <app-base-card-body>
+                <ul class="mdl-list">
+                  <li *ngFor="let item of data" class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                      <div class="mdl-list__item-avatar">
+                        <img width="100%" src="assets/images/{{ item.image }}">
+                      </div>
+                      <span>{{ item.name }}</span>
+                    </span>
+                  </li>
+                </ul>
+              </app-base-card-body>
+            </app-base-card>
+          </div>
+
 
 
 </div>

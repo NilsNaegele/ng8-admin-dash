@@ -33,7 +33,7 @@ export class SidebarComponent extends BaseSidebarComponent {
     { name: 'Konto', link: '/app/forms', icon: 'person' },
     {
       name: 'Karten', icon: 'map', children: [
-      { name: 'Eingfache Karte', link: '/maps/simple' },
+      { name: 'Einfache Karte', link: '/maps/simple' },
       { name: 'Fortgeschrittene Karte', link: '/maps/advanced' },
       ],
     },

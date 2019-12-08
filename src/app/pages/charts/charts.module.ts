@@ -8,6 +8,8 @@ import { BrowserStatisticsComponent } from './browser-statistics/browser-statist
 import { ChartsComponent } from './charts.component';
 import { CountryStatisticsComponent } from './country-statistics/country-statistics.component';
 import { DiscreteBarComponent } from './discrete-bar/discrete-bar.component';
+import { LineChartOneComponent } from './line-chart-one/line-chart-one.component';
+import { LineChartTwoComponent } from './line-chart-two/line-chart-two.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { DiscreteBarComponent } from './discrete-bar/discrete-bar.component';
     BrowserStatisticsComponent,
     CountryStatisticsComponent,
     DiscreteBarComponent,
+    LineChartOneComponent,
+    LineChartTwoComponent,
   ],
   imports: [
     CommonModule,

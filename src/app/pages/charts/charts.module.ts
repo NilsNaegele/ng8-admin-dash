@@ -10,6 +10,7 @@ import { CountryStatisticsComponent } from './country-statistics/country-statist
 import { DiscreteBarComponent } from './discrete-bar/discrete-bar.component';
 import { LineChartOneComponent } from './line-chart-one/line-chart-one.component';
 import { LineChartTwoComponent } from './line-chart-two/line-chart-two.component';
+import { LinePlusBarChartComponent } from './line-plus-bar-chart/line-plus-bar-chart.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { LineChartTwoComponent } from './line-chart-two/line-chart-two.component
     DiscreteBarComponent,
     LineChartOneComponent,
     LineChartTwoComponent,
+    LinePlusBarChartComponent,
   ],
   imports: [
     CommonModule,

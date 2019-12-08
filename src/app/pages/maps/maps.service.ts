@@ -9,22 +9,22 @@ export class MapsService {
   getCountriesPopulation(): Observable<any[]> {
     return of([
       {
-        position: { lat: 52.858248, lng: 27.701393 },
-        population: '9 491 800',
-        area: '207 595',
-        name: 'Belarus',
+        position: { lat: 52.52437, lng: 13.41053 },
+        population: '83,019,200',
+        area: '357,386',
+        name: 'Deutschland',
       },
       {
-        position: { lat: 16.378309, lng: 101.307704 },
-        population: '68 863 514',
-        area: '349',
-        name: 'Thailand',
+        position: { lat: 39.381266, lng: -97.922211 },
+        population: '327,500,300',
+        area: '9,834',
+        name: 'USA',
       },
       {
-        position: { lat: 6.494347, lng: -65.441083 },
-        population: '30 761 000',
-        area: '916 445',
-        name: 'Venezuela',
+        position: { lat: -25.734968, lng: 134.489563 },
+        population: '24,600,000',
+        area: '7,692',
+        name: 'Australien',
       },
     ]);
   }
@@ -32,16 +32,16 @@ export class MapsService {
   getCitiesPopulation(): Observable<any[]> {
     return of([
       {
-        position: { lat: 53.677834, lng: 23.829529 },
-        population: '365 610',
-        area: '142',
-        name: 'Grodno',
+        position: { lat: 52.520008, lng: 13.404954 },
+        population: '3,600,119',
+        area: '892',
+        name: 'Berlin',
       },
       {
-        position: { lat: 53.902496, lng: 27.561481 },
-        population: '1 982 444',
-        area: '410',
-        name: 'Minsk',
+        position: { lat: 38.89511, lng: -77.03637 },
+        population: '5,600,357',
+        area: '177',
+        name: 'Washington DC',
       },
       {
         position: { lat: 13.758945, lng: 100.532646 },

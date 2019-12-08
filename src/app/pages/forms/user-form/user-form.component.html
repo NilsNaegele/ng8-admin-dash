@@ -1,0 +1,178 @@
+<app-base-card>
+  <app-base-card-title>
+    <h2>Formular</h2>
+    <div class="mdl-card__subtitle">Füllen Sie bitte das Formular aus</div>
+  </app-base-card-title>
+  <app-base-card-body>
+    <form action="#" class="form">
+      <div class="form__article">
+        <h3>Persönliche Daten</h3>
+
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--6-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="firstName" value="Nils-Holger"/>
+            <label class="mdl-textfield__label" for="firstName">Vorname</label>
+          </div>
+
+          <div class="mdl-cell mdl-cell--6-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="secondName" value="Nägele"/>
+            <label class="mdl-textfield__label" for="secondName">Nachname</label>
+          </div>
+        </div>
+
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--6-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="birthday" value="13 Juli, 1971"/>
+            <label class="mdl-textfield__label" for="birthday">Geburtstag</label>
+          </div>
+
+          <div class="mdl-cell mdl-cell--6-col">
+            <material-angular-select [data]="['Mann', 'Frau']"
+                                  [label]="'Geschlecht'"
+                                  [name]="'gender'"
+                                  [currentValue]="'Mann'"
+                                  [fixHeight]="true"></material-angular-select>
+          </div>
+        </div>
+      </div>
+
+      <div class="form__article">
+        <h3>Projekte</h3>
+
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--6-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" value="Soft 3" id="company" disabled/>
+            <label class="mdl-textfield__label" for="company">Firma</label>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="company_email" value="nilsholger1307@gmail.com" disabled/>
+            <label class="mdl-textfield__label" for="company_email">Firma Email</label>
+          </div>
+        </div>
+
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--6-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" value="Alpha Entwickler" id="position"/>
+            <label class="mdl-textfield__label" for="position">Position</label>
+          </div>
+          <div class="mdl-cell mdl-cell--6-col">
+            <material-angular-select [data]="qualifications"
+                                  [label]="'Qualifizierungen'"
+                                  [name]="'qualification'"
+                                  [currentValue]="'Junger Bulle'"
+                                  [fixHeight]="true"></material-angular-select>
+          </div>
+        </div>
+
+        <span>Job Art:</span>
+
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="partition-fulltime">
+          <input type="radio" id="partition-fulltime" class="mdl-radio__button" name="employment" value="1"/>
+          <span class="mdl-radio__label">Vollzeit</span>
+        </label>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="partition-partTime">
+          <input type="radio" id="partition-partTime" class="mdl-radio__button" name="employment" checked value="2"/>
+          <span class="mdl-radio__label">Teilzeit</span>
+        </label>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="partition-remote">
+          <input type="radio" id="partition-remote" class="mdl-radio__button" name="employment" value="3"/>
+          <span class="mdl-radio__label">Freiberufler</span>
+        </label>
+      </div>
+
+      <div class="form__article employer-form__contacts">
+        <h3>Kontakt Daten</h3>
+
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--9-col input-group">
+            <i class="material-icons pull-left">call</i>
+
+            <div class="mdl-textfield mdl-js-textfield pull-left">
+              <input class="mdl-textfield__input" type="text" id="phone">
+              <label class="mdl-textfield__label" for="phone">017777-32-698</label>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--3-col">
+            <material-angular-select [data]="['Mobile', 'Zuhause', 'Arbeit']"
+                                  [name]="'phone_type'"
+                                  [currentValue]="'Mobile'"></material-angular-select>
+          </div>
+        </div>
+
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--9-col input-group">
+            <img src="assets/images/skype.svg">
+
+            <div class="mdl-textfield mdl-js-textfield pull-left">
+              <input class="mdl-textfield__input" type="text" id="skype" value="nils.holger.naegele"/>
+              <label class="mdl-textfield__label" for="skype">Skype</label>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--3-col">
+            <material-angular-select [data]="['Persönlich', 'Arbeit']"
+                                  [name]="'skype_type'"
+                                  [currentValue]="'Persönlich'"></material-angular-select>
+          </div>
+        </div>
+
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--9-col input-group">
+            <i class="material-icons pull-left">mail_outline</i>
+
+            <div class="mdl-textfield mdl-js-textfield pull-left">
+              <input class="mdl-textfield__input" type="text" id="email" value="nilsholger1307@gmail.com"/>
+              <label class="mdl-textfield__label" for="email">Email</label>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--3-col">
+            <material-angular-select [data]="['Persönlich', 'Arbeit']"
+                                  [name]="'email_type'"
+                                  [currentValue]="'Arbeit'"></material-angular-select>
+          </div>
+        </div>
+
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--9-col input-group">
+            <i class="material-icons pull-left">place</i>
+
+            <div class="mdl-textfield mdl-js-textfield pull-left">
+              <input class="mdl-textfield__input" type="text" id="address"/>
+              <label class="mdl-textfield__label" for="address">Address</label>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--3-col">
+            <material-angular-select [data]="['Zuhause', 'Arbeit']"
+                                  [name]="'address_type'"
+                                  [currentValue]="'Zuhause'"></material-angular-select>
+          </div>
+        </div>
+      </div>
+
+      <div class="form__article employer-form__general_skills">
+        <h3>Generelle Kompetenzen</h3>
+
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <textarea class="mdl-textfield__input" type="text" rows="3" id="AboutMe">
+              Nur zum Spass...
+          </textarea>
+          <label class="mdl-textfield__label" for="AboutMe">Über mich</label>
+        </div>
+      </div>
+
+      <div class="form__action">
+        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="isInfoReliable">
+          <input #isInfoReliable type="checkbox" id="isInfoReliable" class="mdl-checkbox__input" required/>
+          <span class="mdl-checkbox__label">Eingegebene Daten sind Vertrauenswürdig</span>
+        </label>
+        <button [disabled]="!isInfoReliable.checked" id="submit_button"
+                class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+          Senden
+        </button>
+      </div>
+    </form>
+  </app-base-card-body>
+</app-base-card>

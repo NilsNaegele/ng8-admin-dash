@@ -140,7 +140,7 @@
     }
   }
   
-  @mixin typo-employer-form-header($usePreferred: true) {
+  @mixin typo-user-form-header($usePreferred: true) {
     @include typo-preferred-font($usePreferred);
   
     h2:first-of-type {
@@ -160,23 +160,23 @@
     }
   }
   
-  @mixin typo-employer-form-topic($usePreferred: true) {
+  @mixin typo-user-form-topic($usePreferred: true) {
     @include typo-preferred-font($usePreferred);
   
     font-size: 20px;
     font-weight: 300;
-    color: $employer-form-color-darker;
+    color: $user-form-color-darker;
   }
   
-  @mixin typo-employer-form-inputs($usePreferred: true) {
+  @mixin typo-user-form-inputs($usePreferred: true) {
     @include typo-preferred-font($usePreferred);
   
-    color: $employer-form-color-brighter;
+    color: $user-form-color-brighter;
     font-size: 16px;
     font-weight: 300;
   }
   
-  @mixin typo-employer-form-button($usePreferred: true) {
+  @mixin typo-user-form-button($usePreferred: true) {
     @include typo-preferred-font($usePreferred);
   
     font-size: 13px;

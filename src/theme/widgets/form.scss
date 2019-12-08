@@ -71,7 +71,7 @@
   
   .form__article {
     h3 {
-      @include typo-employer-form-topic();
+      @include typo-user-form-topic();
   
       margin-top: 4px;
       margin-bottom: 20px;
@@ -88,7 +88,7 @@
       width: auto;
   
       .mdl-checkbox__label {
-        @include typo-employer-form-inputs();
+        @include typo-user-form-inputs();
       }
     }
   

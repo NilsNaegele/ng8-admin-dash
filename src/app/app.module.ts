@@ -3,8 +3,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { DashboardModule } from './pages/dashboard/dashboard.module';
+import { UserFormsModule } from './pages/forms/forms.module';
 
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { BlankLayoutCardComponent } from './components/blank-layout-card/blank-layout-card.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
@@ -25,6 +27,7 @@ import { FakeBackendInterceptor } from './services/auth/fakebackend.interceptor.
     AppRoutingModule,
     ComponentsModule,
     DashboardModule,
+    UserFormsModule,
     ChartsModule,
   ],
   providers: [

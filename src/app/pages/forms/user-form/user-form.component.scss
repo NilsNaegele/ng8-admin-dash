@@ -1,0 +1,117 @@
+@import '../../../../theme/helpers';
+
+.user-form {
+  .mdl-card {
+    padding: 0;
+    width: $user-form-width;
+    background-color: $background-color;
+    margin: 16px auto;
+    height: auto;
+  }
+
+  .mdl-radio {
+    width: 20%;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    color: $user-form-color-brighter;
+  }
+
+  .form__article > span {
+    float: left;
+    width: 100%;
+    color: $user-form-color-darker;
+    font-weight: 200;
+  }
+
+  .mdl-card__title {
+    background-color: $color-accent;
+    height: 66px;
+    width: 100%;
+    padding-top: 16px;
+    padding-left: $user-form-horizontal-padding;
+    padding-right: $user-form-horizontal-padding;
+    padding-bottom: 0;
+    display: block;
+
+    @include typo-user-form-header();
+  }
+
+  button.mdl-button.mdl-button--colored {
+    width: 68px;
+    height: 32px;
+
+    @include typo-user-form-button();
+
+    background-color: $color-primary;
+
+    &:disabled {
+      background-color: gray;
+      color: $user-form-color-darker;
+    }
+  }
+
+  label {
+    font-size: 15px;
+    color: $user-form-color-darker;
+  }
+
+  .form__action {
+    .mdl-checkbox {
+      .mdl-ripple {
+        background: $color-primary;
+      }
+
+      &.is-checked {
+        .mdl-checkbox__box-outline {
+          border-color: $color-primary;
+
+          .mdl-checkbox__tick-outline {
+            background-color: $color-primary;
+            background-image: url("#{$image-path}/tick_dark.svg?embed");
+          }
+        }
+      }
+    }
+  }
+}
+
+.user-form__general_skills {
+  margin-top: 24px;
+
+  div {
+    width: 100%;
+  }
+
+  .mdl-textfield label {
+    color: $user-form-color-darker;
+  }
+
+  .mdl-textfield--floating-label.is-focused .mdl-textfield__label {
+    color: $color-primary;
+  }
+
+  textarea {
+    height: 90px;
+  }
+}
+
+.user-form__contacts {
+  div {
+    .mdl-textfield.getmdl-select .mdl-textfield__input {
+      color: $user-form-color-darker;
+    }
+
+    .mdl-textfield {
+      padding-top: 0;
+
+      label {
+        top: 4px;
+        font-weight: 300;
+      }
+    }
+
+    i {
+      color: $user-form-color-brighter;
+    }
+  }
+}

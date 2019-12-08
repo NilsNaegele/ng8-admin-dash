@@ -80,14 +80,14 @@
     }
   
     .mdl-menu .mdl-menu__item {
-      @include typo-employer-form-inputs();
+      @include typo-user-form-inputs();
     }
   }
   
   .mdl-textfield {
     input,
     textarea {
-      @include typo-employer-form-inputs();
+      @include typo-user-form-inputs();
     }
   
     &.is-disabled {

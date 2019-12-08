@@ -7,12 +7,14 @@ import { ThemeModule } from './../../../theme/theme.module';
 import { BrowserStatisticsComponent } from './browser-statistics/browser-statistics.component';
 import { ChartsComponent } from './charts.component';
 import { CountryStatisticsComponent } from './country-statistics/country-statistics.component';
+import { DiscreteBarComponent } from './discrete-bar/discrete-bar.component';
 
 @NgModule({
   declarations: [
     ChartsComponent,
     BrowserStatisticsComponent,
     CountryStatisticsComponent,
+    DiscreteBarComponent,
   ],
   imports: [
     CommonModule,

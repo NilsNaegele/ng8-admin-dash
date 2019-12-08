@@ -11,6 +11,7 @@ import { DiscreteBarComponent } from './discrete-bar/discrete-bar.component';
 import { LineChartOneComponent } from './line-chart-one/line-chart-one.component';
 import { LineChartTwoComponent } from './line-chart-two/line-chart-two.component';
 import { LinePlusBarChartComponent } from './line-plus-bar-chart/line-plus-bar-chart.component';
+import { StackedBarChartComponent } from './stacked-bar-chart/stacked-bar-chart.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { LinePlusBarChartComponent } from './line-plus-bar-chart/line-plus-bar-c
     LineChartOneComponent,
     LineChartTwoComponent,
     LinePlusBarChartComponent,
+    StackedBarChartComponent,
   ],
   imports: [
     CommonModule,

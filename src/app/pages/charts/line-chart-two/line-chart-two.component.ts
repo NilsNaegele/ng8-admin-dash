@@ -25,21 +25,21 @@ export class LineChartTwoComponent extends LineChartComponent {
     this.animatedData = [
       {
         values: [],
-        key: 'Teal graph',
+        key: 'Blauer Graph',
         color: '#00bcd4',
         fillOpacity: 0.00001,
         area: true,
       },
       {
         values: [],
-        key: 'Orange graph',
+        key: 'Orangener Graph',
         color: '#ffc107',
         fillOpacity: 0.00001,
         area: true,
       },
       {
         values: [],
-        key: 'Green graph',
+        key: 'Grüner Graph',
         color: '#00d45a',
         fillOpacity: 0.00001,
       },

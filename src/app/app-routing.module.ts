@@ -5,6 +5,7 @@ import { CommonLayoutComponent } from './layouts/common-layout/common-layout.com
 import { LayoutsModule } from './layouts/layouts.module';
 
 import { ChartsComponent } from './pages/charts/charts.component';
+import { DashboardCustomComponent } from './pages/dashboard-custom/dashboard-custom.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { FormsComponent } from './pages/forms/forms.component';
 
@@ -17,7 +18,7 @@ const routes: Routes = [];
         { path: '', redirectTo: 'user', pathMatch: 'full' },
         { path: 'app', component: CommonLayoutComponent, children: [
           { path: 'dashboard', component: DashboardComponent, pathMatch: 'full' },
-          // { path: 'dashboard-custom', component: Dashboard2Component, pathMatch: 'full' },
+          { path: 'dashboard-custom', component: DashboardCustomComponent, pathMatch: 'full' },
           { path: 'forms', component: FormsComponent, pathMatch: 'full' },
           { path: 'charts', component: ChartsComponent, pathMatch: 'full' },
           // { path: 'components', component: ComponentsComponent, pathMatch: 'full' },
@@ -25,7 +26,6 @@ const routes: Routes = [];
         ] }, // add 'canActivate: AuthGuard' for catching unauth users
         { path: 'user-interface', loadChildren: './pages/user-interface/user-interface.module#UserInterfaceModule' },
         { path: 'maps', loadChildren: './pages/maps/maps.module#MapsModule' },
-       // { path: 'user', loadChildren: './pages/user/user.module#UserModule' },
         { path: 'user', loadChildren: './pages/user/user.module#UserModule' },
         { path: '**', redirectTo: '/user/404' },
       ],

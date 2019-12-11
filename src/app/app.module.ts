@@ -2,6 +2,7 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { DashboardCustomModule } from './pages/dashboard-custom/dashboard-custom.module';
 import { DashboardModule } from './pages/dashboard/dashboard.module';
 import { UserFormsModule } from './pages/forms/forms.module';
 
@@ -27,6 +28,7 @@ import { FakeBackendInterceptor } from './services/auth/fakebackend.interceptor.
     AppRoutingModule,
     ComponentsModule,
     DashboardModule,
+    DashboardCustomModule,
     UserFormsModule,
     ChartsModule,
   ],

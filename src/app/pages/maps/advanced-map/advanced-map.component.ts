@@ -27,7 +27,7 @@ const iconSize = 20;
   styleUrls: ['./advanced-map.component.scss'],
 })
 export class AdvancedMapComponent  extends UpgradableComponent implements AfterViewInit, OnDestroy {
-  @HostBinding('class.map-advanced') private map = true;
+  @HostBinding('class.map-advanced') public map = true;
 
   @ViewChild('gmap', { static: false }) gmapElement: any;
   public gMap: any;

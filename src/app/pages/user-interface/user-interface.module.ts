@@ -12,6 +12,7 @@ import { CardsComponent } from './cards/cards.component';
 import { ColorsComponent } from './colors/colors.component';
 import { FormsComponent } from './forms/forms.component';
 import { IconsComponent } from './icons/icons.component';
+import { RightSidebarComponent } from './right-sidebar/right-sidebar.component';
 import { TablesComponent } from './tables/tables.component';
 import { TypographyComponent } from './typography/typography.component';
 
@@ -24,6 +25,7 @@ import { TypographyComponent } from './typography/typography.component';
     IconsComponent,
     TypographyComponent,
     TablesComponent,
+    RightSidebarComponent,
   ],
   imports: [
     CommonModule,

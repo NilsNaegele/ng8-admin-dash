@@ -1,0 +1,27 @@
+@import '../../helpers';
+
+app-base-right-sidebar-layout {
+  display: block;
+
+  app-base-right-sidebar-content {
+    display: block;
+    width: calc(100% - #{$right-sidebar-width});
+  }
+
+  app-base-right-sidebar {
+    display: block;
+    width: $right-sidebar-width;
+  }
+
+  @media screen and (max-width: $phone-breakpoint) {
+    app-base-right-sidebar-content {
+      width: 100%;
+    }
+
+    app-base-right-sidebar {
+      position: fixed;
+      right: 8px;
+      z-index: 1000;
+    }
+  }
+}

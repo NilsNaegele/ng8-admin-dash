@@ -13,6 +13,7 @@ import { LineChartComponent } from './components/line-chart/line-chart.component
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { PieChartComponent } from './components/pie-chart/pie-chart.component';
 import { RadioButtonComponent } from './components/radio-button/radio-button.component';
+import { RightSidebarModule } from './components/right-sidebar/right-sidebar.module';
 import { SidebarModule } from './components/sidebar/sidebar.module';
 import { SwitchComponent } from './components/switch/switch.component';
 import { ToggleComponent } from './components/toggle/toggle.component';
@@ -48,6 +49,7 @@ const BASE_PIPES = [];
     FormsModule,
     ReactiveFormsModule,
     SidebarModule,
+    RightSidebarModule,
     CardModule,
   ],
   exports: [
@@ -56,6 +58,7 @@ const BASE_PIPES = [];
     ...BASE_PIPES,
     SidebarModule,
     CardModule,
+    RightSidebarModule,
     TooltipModule,
   ],
 })

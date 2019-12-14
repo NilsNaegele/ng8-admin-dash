@@ -11,7 +11,7 @@ export class SidebarComponent extends BaseSidebarComponent {
   public title = 'gblitz';
   public menu = [
     { name: 'Mein Dashboard', link: '/app/dashboard', icon: 'dashboard' },
-    { name: 'Mass Dashboard', link: '/app/dashboard-custom', icon: 'view_quilt' },
+    { name: 'Maß. Dashboard', link: '/app/dashboard-custom', icon: 'view_quilt' },
     {
       name: 'UI',
       children: [

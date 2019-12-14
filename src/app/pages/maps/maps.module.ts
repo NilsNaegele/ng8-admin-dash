@@ -18,5 +18,8 @@ import { MapsRoutingModule } from './maps-routing.module';
     ThemeModule,
     MapsRoutingModule,
   ],
+  exports: [
+    AdvancedMapComponent,
+  ],
 })
 export class MapsModule { }

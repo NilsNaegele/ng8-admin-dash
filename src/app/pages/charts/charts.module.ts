@@ -29,5 +29,8 @@ import { StackedBarChartComponent } from './stacked-bar-chart/stacked-bar-chart.
     FormsModule,
     ThemeModule,
   ],
+  exports: [
+    CountryStatisticsComponent,
+  ],
 })
 export class ChartsModule { }

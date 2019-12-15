@@ -17,6 +17,7 @@ import { FiltersComponent } from './right-sidebar/filters/filters.component';
 import { RightSidebarComponent } from './right-sidebar/right-sidebar.component';
 import { TablesComponent } from './tables/tables.component';
 import { TypographyComponent } from './typography/typography.component';
+import { DodecahedronComponent } from './dodecahedron/dodecahedron.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { TypographyComponent } from './typography/typography.component';
     RightSidebarComponent,
     FiltersComponent,
     IntervalTableComponent,
+    DodecahedronComponent,
   ],
   imports: [
     CommonModule,

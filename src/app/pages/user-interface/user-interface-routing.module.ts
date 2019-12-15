@@ -8,6 +8,7 @@ import { ComponentsComponent } from './../components/components.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { CardsComponent } from './cards/cards.component';
 import { ColorsComponent } from './colors/colors.component';
+import { DodecahedronComponent } from './dodecahedron/dodecahedron.component';
 import { FormsComponent } from './forms/forms.component';
 import { IconsComponent } from './icons/icons.component';
 import { IntervalTableComponent } from './interval-table/interval-table.component';
@@ -29,6 +30,7 @@ import { TypographyComponent } from './typography/typography.component';
           { path: 'schriftzuege', component: TypographyComponent, pathMatch: 'full' },
           { path: 'tabellen', component: TablesComponent, pathMatch: 'full' },
           { path: 'intervall-tabelle', component: IntervalTableComponent, pathMatch: 'full' },
+          { path: 'dodekaeder', component: DodecahedronComponent, pathMatch: 'full' },
           { path: 'komponente', component: ComponentsComponent, pathMatch: 'full' },
         ],
       },

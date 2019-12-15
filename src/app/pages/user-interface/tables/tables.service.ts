@@ -381,22 +381,22 @@ export class TablesService {
         sort: null,
       },
       {
-        name: 'Year',
+        name: 'Jahr',
         sort: null,
       },
       {
-        name: 'Originally published',
+        name: 'Publizierungsdatum',
         sort: 0,
       },
       {
-        name: 'Language',
+        name: 'Sprache',
         sort: null,
       },
       {
-        name: 'Original Language',
+        name: 'Originale Sprache',
         sort: 0,
       }, {
-        name: 'Availability',
+        name: 'Verfügbarkeit',
         sort: 0,
       },
 

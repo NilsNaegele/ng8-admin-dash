@@ -10,6 +10,7 @@ import { CardsComponent } from './cards/cards.component';
 import { ColorsComponent } from './colors/colors.component';
 import { FormsComponent } from './forms/forms.component';
 import { IconsComponent } from './icons/icons.component';
+import { IntervalTableComponent } from './interval-table/interval-table.component';
 import { TablesComponent } from './tables/tables.component';
 import { TypographyComponent } from './typography/typography.component';
 
@@ -27,6 +28,7 @@ import { TypographyComponent } from './typography/typography.component';
           { path: 'ikonen', component: IconsComponent, pathMatch: 'full' },
           { path: 'schriftzuege', component: TypographyComponent, pathMatch: 'full' },
           { path: 'tabellen', component: TablesComponent, pathMatch: 'full' },
+          { path: 'intervall-tabelle', component: IntervalTableComponent, pathMatch: 'full' },
           { path: 'komponente', component: ComponentsComponent, pathMatch: 'full' },
         ],
       },
